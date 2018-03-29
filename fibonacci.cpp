@@ -2,7 +2,7 @@
 
 int main()
 {
-  int i, N, a[50];
+  int i, N, a[50], total=0;
   printf("Banyak data untuk deret fibonacci : ");
   scanf("%d", &N);
   
@@ -18,6 +18,7 @@ int main()
   printf("1\t");
   for (i=1; i<N; i++)
   {
-    printf("%d\t",a[i]);
+  	total += a[i];
   }
+  printf("\n\nOutput : %d\t",(total+1));
 }
